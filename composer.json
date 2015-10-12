@@ -1,0 +1,27 @@
+{
+   	"name": "cgcookie/beta-users",
+   	"type": "wordpress-plugin",
+	"description": "Beta User Group",
+	"keywords": [ "beta-users", "plugin"],
+	"homepage": "http://cgcookie.com",
+	"authors": [
+	    {
+	      	"name": "Nick Haskins",
+	      	"email": "nick@cgcookie.com",
+	      	"homepage": "http://cgcookie.com"
+	    },
+	    {
+	      	"name": "Wes Burke",
+	      	"email": "wes@cgcookie.com",
+	      	"homepage": "http://cgcookie.com"
+	    },
+	   	{
+	      	"name": "Jonathan Williamson",
+	      	"email": "jonathan@cgcookie.com",
+	      	"homepage": "http://cgcookie.com"
+	    }
+	],
+   	"require": {
+     	"composer/installers": "~1.0.6"
+   	}
+}
