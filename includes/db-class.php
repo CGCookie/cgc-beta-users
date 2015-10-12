@@ -61,4 +61,14 @@ class CGC_BETAUSERS_DB {
 		return $result ? $result : false;
 
 	}
+
+	function remove_beta_user( $user_id = 0 ){
+
+		global $wpdb;
+
+	   	$result = $wpdb->get_results( $wpdb->prepare( "DELETE FROM {$this->table} WHERE user_id = %d", $user_id ) );
+
+		return $result ? $result : false;
+
+	}
 }

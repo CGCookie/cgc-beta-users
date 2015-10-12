@@ -24,7 +24,17 @@ function cgc_add_beta_user( $args = array() ) {
 
 }
 
-function cgc_remove_beta_user(){}
+function cgc_remove_beta_user( $user_id = 0 ){
+
+	if ( empty( $user_id ) )
+		return;
+
+	$db = new CGC_BETAUSERS_DB;
+
+	$out = $db->remove_beta_user( absint( $user_id ) );
+
+	return $out ? $out : false;
+}
 
 /**
 *	Get a single beta user

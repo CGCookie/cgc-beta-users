@@ -64,7 +64,7 @@ class CGC_Beta_Users {
 	 */
 	private function __construct() {
 
-		require_once(CGC_BETAUSERS_DIR.'admin/includes/db-class.php');
+		require_once(CGC_BETAUSERS_DIR.'includes/db-class.php');
 		require_once(CGC_BETAUSERS_DIR.'includes/helpers.php');
 
 		// Activate plugin when new blog is added
