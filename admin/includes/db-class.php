@@ -56,7 +56,7 @@ class CGC_BETAUSERS_DB {
 
 		global $wpdb;
 
-	   	$result = $wpdb->get_results( "SELECT user_id FROM {$this->table} WHERE user_id = %d", $user_id );
+	   	$result = $wpdb->get_results( $wpdb->prepare( "SELECT user_id FROM {$this->table} WHERE user_id = %d", $user_id ) );
 
 		return $result ? $result : false;
 
